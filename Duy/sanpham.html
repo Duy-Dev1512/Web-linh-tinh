@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>H-Tech</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/sanpham.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" />
+    <link rel="shortcut icon" href="./img/favi.ico" type="image/x-icon">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+        body {
+            font-family: 'Roboto', sans-serif;
+        }
+        
+        .nav-item {
+            font-weight: bold;
+        }
+        
+        .nav-link:hover {
+            color: #0080ff !important;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="header-top" style="background-color: #0080ff;">
+            <nav class="navbar-expand-lg">
+                <div class="navbar container" style=" min-height:70px;">
+                    <img src="./img/logo-dark.png" alt="" height="70px" class="d-none d-md-block">
+                    <form class="d-flex" style="width: 50%;">
+                        <input class="form-control rounded-start" type="search" placeholder="Tìm kiếm sản phẩm" aria-label="Search">
+                        <button class="btn text-white" type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
+                    </form>
+                    <div>
+                        <button type="button " class="btn btn-primary btn-outline-light">
+                        <i class="fa-solid fa-basket-shopping"></i>
+                        Giỏ Hàng
+                    </button>
+                    </div>
+                    <button class="navbar-toggler btn-outline-light" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+                  <i class="fa-solid fa-bars text-white"></i>
+                </button>
+                </div>
+            </nav>
+            <nav class="navbar-expand-lg text-white">
+                <ul class="d-flex justify-content-betwee navbar container list-unstyled text-center fs-6 mb-0 d-none d-md-flex">
+                    <li>Sản phẩm bán chạy</li>
+                    <li>Sản phẩm mới</li>
+                    <li>Sản phẩm khuyến mãi</li>
+                    <li>Phụ Kiện</li>
+                </ul>
+            </nav>
+        </div>
+        <div class="header-bottom">
+            <nav class="navbar-light bg-light navbar-expand-lg">
+                <div class="container">
+                    <div class="offcanvas offcanvas-end off mx-auto" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel" style="width: 100%;">
+                        <div class="offcanvas-header">
+                            <img src="./img/logo.png" alt="" height="70px">
+                            <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                        </div>
+                        <div class=" offcanvas-body">
+                            <ul class="d-flex align-items-center align-items-center justify-content-end navbar-nav flex-grow-1 text-center ">
+                                <li class="nav-item px-3">
+                                    <a class="nav-link active flex-grow-1" href="#">Sản phẩm</a>
+                                </li>
+                                <li class="nav-item px-3">
+                                    <a class="nav-link active flex-grow-1" href="#">Tin Tức</a>
+                                </li>
+                                <li class="nav-item px-3">
+                                    <a class="nav-link active flex-grow-1" href="#">Liên Hệ</a>
+                                </li>
+                                <li class="nav-item px-3">
+                                    <i class="fa-solid fa-user fs-5"></i>
+                                    <a class="text-dark text-decoration-none" href="">Đăng ký / Đăng nhập</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </header>
+    <main style="min-height: 100vh;">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
+                    <div class="card card-small">
+                        <div class="thumbnail">
+                            <img alt="Opt alp thumbnail" src="img/img-sanpham/acernitro5.png">
+                            <a href="#/product/awesome-landing-page">
+                                <div class="thumb-cover"></div>
+                            </a>
+                        </div>
+                        <div class="card-info">
+                            <div class="moving">
+                                <a href="#/product/awesome-landing-page">
+                                    <h3><strong>Acer Nitro Gaming AN515-45-R6EV R5 5600H</strong> </h3>
+                                    <button class="prices" style="color: white;">21.499.000₫</button>
+                                    <p>
+                                        <i class="fa-solid fa-display"> </i> 15.6 inch &ensp;
+                                        <i class="fa-solid fa-microchip"></i> Ryzen 5 &ensp;
+                                        <i class="fa-solid fa-memory"></i> 8 GB &ensp;
+                                        <i class="fa-solid fa-hard-drive"></i> SSD 512 GB <br>
+                                        <i class="fa-solid fa-tachograph-digital"></i> NVIDIA GeForce GTX 1650 4GB <br>
+                                        <i class="fa-solid fa-weight-hanging"></i> 2.2 kg
+                                    </p>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
+                    <div class="card card-small">
+                        <div class="thumbnail">
+                            <img alt="Opt alp thumbnail" src="img/img-sanpham/tufgm.png">
+                            <a href="#/product/awesome-landing-page">
+                                <div class="thumb-cover"></div>
+                            </a>
+                        </div>
+                        <div class="card-info">
+                            <div class="moving">
+                                <a href="#/product/awesome-landing-page">
+                                    <h3><strong>Laptop Asus TUF Gaming FX506LH-HN188W i5 10300H</strong> </h3>
+                                    <button class="prices" style="color: white;">18.999.000₫</button>
+                                    <p>
+                                        <i class="fa-solid fa-display"> </i> 15.6 inch &ensp;
+                                        <i class="fa-solid fa-microchip"></i> Core i5 &ensp;
+                                        <i class="fa-solid fa-memory"></i> 8 GB &ensp;
+                                        <i class="fa-solid fa-hard-drive"></i> SSD 512 GB <br>
+                                        <i class="fa-solid fa-tachograph-digital"></i> NVIDIA GeForce GTX 1650 4GB <br>
+                                        <i class="fa-solid fa-weight-hanging"></i> 2.3 kg
+                                    </p>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
+                    <div class="card card-small">
+                        <div class="thumbnail">
+                            <img alt="Opt alp thumbnail" src="img/img-sanpham/msi.png">
+                            <a href="#/product/awesome-landing-page">
+                                <div class="thumb-cover"></div>
+                            </a>
+                        </div>
+                        <div class="card-info">
+                            <div class="moving">
+                                <a href="#/product/awesome-landing-page">
+                                    <h3><strong>Laptop MSI Gaming GF63 Thin 10SC-481VN i7 10750H</strong> </h3>
+                                    <button class="prices" style="color: white;">20.699.000₫</button>
+                                    <p>
+                                        <i class="fa-solid fa-display"> </i> 15.6 inch &ensp;
+                                        <i class="fa-solid fa-microchip"></i> Core i7 &ensp;
+                                        <i class="fa-solid fa-memory"></i> 8 GB &ensp;
+                                        <i class="fa-solid fa-hard-drive"></i> SSD 512 GB <br>
+                                        <i class="fa-solid fa-tachograph-digital"></i> NVIDIA GeForce GTX 1650 Max-Q 4GB <br>
+                                        <i class="fa-solid fa-weight-hanging"></i> 1.86 kg
+                                    </p>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
+                    <div class="card card-small">
+                        <div class="thumbnail">
+                            <img alt="Opt alp thumbnail" src="img/img-sanpham/dell-vostro.png">
+                            <a href="#/product/awesome-landing-page">
+                                <div class="thumb-cover"></div>
+                            </a>
+                        </div>
+                        <div class="card-info">
+                            <div class="moving">
+                                <a href="#/product/awesome-landing-page">
+                                    <h3><strong>Dell Vostro V3400 i5 1135G7/YX51W3</strong> </h3>
+                                    <button class="prices" style="color: white;">20.849.000₫</button>
+                                    <p>
+                                        <i class="fa-solid fa-display"> </i> 14.0 inch &ensp;
+                                        <i class="fa-solid fa-microchip"></i> Core i5 &ensp;
+                                        <i class="fa-solid fa-memory"></i> 8 GB &ensp;
+                                        <i class="fa-solid fa-hard-drive"></i> SSD 512 GB <br>
+                                        <i class="fa-solid fa-tachograph-digital"></i> NVIDIA GeForce MX330 2GB <br>
+                                        <i class="fa-solid fa-weight-hanging"></i> 1.55 kg
+                                    </p>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
+                    <div class="card card-small">
+                        <div class="thumbnail">
+                            <img alt="Opt alp thumbnail" src="img/img-sanpham/dell.png">
+                            <a href="#/product/awesome-landing-page">
+                                <div class="thumb-cover"></div>
+                            </a>
+                        </div>
+                        <div class="card-info">
+                            <div class="moving">
+                                <a href="#/product/awesome-landing-page">
+                                    <h3><strong>Laptop Dell Vostro V3510 i5 1135G7</strong> </h3>
+                                    <button class="prices" style="color: white;">21.849.000₫</button>
+                                    <p>
+                                        <i class="fa-solid fa-display"> </i> 15.6 inch &ensp;
+                                        <i class="fa-solid fa-microchip"></i> Core i5 &ensp;
+                                        <i class="fa-solid fa-memory"></i> 8 GB &ensp;
+                                        <i class="fa-solid fa-hard-drive"></i> SSD 512 GB <br>
+                                        <i class="fa-solid fa-tachograph-digital"></i> NVIDIA GeForce MX350 2GB <br>
+                                        <i class="fa-solid fa-weight-hanging"></i> 1.7 kg
+                                    </p>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
+                    <div class="card card-small">
+                        <div class="thumbnail">
+                            <img alt="Opt alp thumbnail" src="img/img-sanpham/dell-v5515.png">
+                            <a href="#/product/awesome-landing-page">
+                                <div class="thumb-cover"></div>
+                            </a>
+                        </div>
+                        <div class="card-info">
+                            <div class="moving">
+                                <a href="#/product/awesome-landing-page">
+                                    <h3><strong>Dell Vostro V5515 R3 5300U/70253897</strong> </h3>
+                                    <button class="prices" style="color: white;">18.599.000₫</button>
+                                    <p>
+                                        <i class="fa-solid fa-display"> </i> 15.6 inch &ensp;
+                                        <i class="fa-solid fa-microchip"></i> Ryzen 3 &ensp;
+                                        <i class="fa-solid fa-memory"></i> 8 GB &ensp;
+                                        <i class="fa-solid fa-hard-drive"></i> SSD 256 GB <br>
+                                        <i class="fa-solid fa-weight-hanging"></i> 1.74 kg
+                                    </p>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </main>
+    <footer class="text-center text-lg-start text-dark" style="background-color: #F3F4F6">
+        <div class="container-fluid">
+            <section class="d-flex justify-content-between p-4 text-white ">
+                <div class="me-5">
+                </div>
+            </section>
+            <section>
+                <div class="container text-md-start">
+                    <div class="row mt-1">
+                        <div class="col-md-6 col-lg-3 col-sm-6 col-xl-3 mx-auto mb-md-0 mb-4 text-center">
+                            <h6 class="text-uppercase fw-bold">THÀNH VIÊN NHÓM</h6>
+                            <hr class="mx-auto" style="width: 60px; background-color: #0080ff; height: 2px" style="width: 60px; background-color: #7c4dff; height: 2px">
+                            <p>Trần Trung</p>
+                            <p>Trình Thị Ngọc Diệp</p>
+                            <p>Phạm Nguyễn Gia Bảo</p>
+                            <p>Trần Hữu Thịnh</p>
+                            <p>Nguyễn Khắc Duy</p>
+                        </div>
+                        <div class="col-md-6 col-lg-3 col-sm-6 mx-auto mb-4 text-center">
+                            <h6 class="text-uppercase fw-bold">TÀI KHOẢN</h6>
+                            <hr class="mx-auto" style="width: 60px; background-color: #0080ff; height: 2px" />
+                            <p><a href="#!" class="text-dark text-decoration-none">Đăng nhập</a></p>
+                            <p><a href="#!" class="text-dark text-decoration-none">Đăng kí</a></p>
+                            <p><a href="#!" class="text-dark text-decoration-none">Thông tin tài khoản</a></p>
+                            <p><a href="#!" class="text-dark text-decoration-none">Help</a></p>
+                        </div>
+                        <div class="col-md-6 col-lg-3 col-sm-6 mx-auto mb-4 text-center">
+                            <h6 class="text-uppercase fw-bold">SẢN PHẨM</h6>
+                            <hr class="mx-auto" style="width: 60px; background-color: #0080ff; height: 2px" />
+                            <p><a href="#!" class="text-dark text-decoration-none">Laptop</a></p>
+                            <p><a href="#!" class="text-dark text-decoration-none">Phụ kiện</a></p>
+                        </div>
+                        <div class="col-md-6 col-lg-3 col-sm-6 mx-auto mb-md-0 mb-4 text-center">
+                            <h6 class="text-uppercase fw-bold">LIÊN HỆ</h6>
+                            <hr class="mx-auto" style="width: 60px; background-color: #0080ff; height: 2px" />
+                            <p><i class="fas fa-home mr-3"></i>: Khu II - ĐHCT, Khoa CNTT&TT</p>
+                            <p><i class="fas fa-phone mr-3"></i>: 0778125494</p>
+                            <p><i class="fa-brands fa-github"></i>
+                                <a class="text-dark text-decoration-none" href="https://github.com/orgs/HTeamCTU/dashboard">: H-TECH</a>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </footer>
+</body>
+
+</html>
