@@ -1,139 +1,199 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>H-Tech</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"/>
     <link rel="shortcut icon" href="./img/favi.ico" type="image/x-icon">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="/Duy/css/sanpham.css">
+    <script src="components/header.js" type="text/javascript" defer></script>
+    <script src="components/footer.js" type="text/javascript" defer></script>
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
-        body {
-            font-family: 'Roboto', sans-serif;
+        body{
+        font-family: 'Roboto', sans-serif;
         }
-        
-        .nav-item {
+        .nav-item{
             font-weight: bold;
         }
-        
-        .nav-link:hover {
+        .nav-link:hover{
             color: #0080ff !important;
         }
     </style>
 </head>
-
 <body>
-    <header>
-        <div class="header-top" style="background-color: #0080ff;">
-            <nav class="navbar-expand-lg">
-                <div class="navbar container" style=" min-height:70px;">
-                    <img src="./img/logo-dark.png" alt="" height="70px" class="d-none d-md-block">
-                    <form class="d-flex" style="width: 50%;">
-                        <input class="form-control rounded-start" type="search" placeholder="Tìm kiếm sản phẩm" aria-label="Search">
-                        <button class="btn text-white" type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
-                    </form>
-                    <div>
-                        <button type="button " class="btn btn-primary btn-outline-light">
-                        <i class="fa-solid fa-basket-shopping"></i>
-                        Giỏ Hàng
-                    </button>
-                    </div>
-                    <button class="navbar-toggler btn-outline-light" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
-                  <i class="fa-solid fa-bars text-white"></i>
-                </button>
-                </div>
-            </nav>
-            <nav class="navbar-expand-lg text-white">
-                <ul class="d-flex justify-content-betwee navbar container list-unstyled text-center fs-6 mb-0 d-none d-md-flex">
-                    <li>Sản phẩm bán chạy</li>
-                    <li>Sản phẩm mới</li>
-                    <li>Sản phẩm khuyến mãi</li>
-                    <li>Phụ Kiện</li>
-                </ul>
-            </nav>
-        </div>
-        <div class="header-bottom">
-            <nav class="navbar-light bg-light navbar-expand-lg">
-                <div class="container">
-                    <div class="offcanvas offcanvas-end off mx-auto" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel" style="width: 100%;">
-                        <div class="offcanvas-header">
-                            <img src="./img/logo.png" alt="" height="70px">
-                            <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-                        </div>
-                        <div class=" offcanvas-body">
-                            <ul class="d-flex align-items-center align-items-center justify-content-end navbar-nav flex-grow-1 text-center ">
-                                <li class="nav-item px-3">
-                                    <a class="nav-link active flex-grow-1" href="sanpham.html">Sản phẩm</a>
-                                </li>
-                                <li class="nav-item px-3">
-                                    <a class="nav-link active flex-grow-1" href="#">Tin Tức</a>
-                                </li>
-                                <li class="nav-item px-3">
-                                    <a class="nav-link active flex-grow-1" href="#">Liên Hệ</a>
-                                </li>
-                                <li class="nav-item px-3">
-                                    <i class="fa-solid fa-user fs-5"></i>
-                                    <a class="text-dark text-decoration-none" href="">Đăng ký / Đăng nhập</a>
-                                </li>
-                            </ul>
+    <header-component></header-component>
+    <main style="min-height: 200vh;">
+        <div id="template-mo-zay-hero-carousel" class="carousel slide" data-bs-ride="carousel">
+            <ol class="carousel-indicators">
+                <li data-bs-target="#template-mo-zay-hero-carousel" data-bs-slide-to="0" class="active"></li>
+                <li data-bs-target="#template-mo-zay-hero-carousel" data-bs-slide-to="1"></li>
+                <li data-bs-target="#template-mo-zay-hero-carousel" data-bs-slide-to="2"></li>
+            </ol>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <div class="container">
+                        <div class="row p-0">
+                            <div class="mx-auto">
+                                <img class="img-fluid" src="/img-folder/banner1.webp" alt="">
+                            </div>
                         </div>
                     </div>
                 </div>
-            </nav>
+                <div class="carousel-item">
+                    <div class="container">
+                        <div class="row p-0">
+                            <div class="mx-auto">
+                                <img class="img-fluid" src="/img-folder/banner2.webp" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="container">
+                        <div class="row p-0">
+                            <div class="mx-auto">
+                                <img class="img-fluid" src="/img-folder/banner3.webp" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <a href="#template-mo-zay-hero-carousel" class="carousel-control-prev text-decoration-none w-auto ps-3" role="button" data-bs-slide="prev">
+                <span class="sr-only">Previous</span>
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            </a>
+            <a href="#template-mo-zay-hero-carousel" class="carousel-control-next text-decoration-none w-auto ps-3" role="button" data-bs-slide="next">
+                <span class="sr-only">Next</span>
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            </a>
         </div>
-    </header>
-    <main style="min-height: 100vh;">
+        <section class="bg-light">
+            <div class="container py-5">
+                <div class="row text-center py-3">
+                    <div class="col-lg-6 m-auto">
+                        <h1 class="h1">Sản Phẩm Nổi Bật</h1>
+                        
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
+                        <div class="card card-small">
+                            <div class="thumbnail">
+                                <img alt="Opt alp thumbnail" src="/img-folder/laptop-dell.webp">
+                                <a href="#/product/awesome-landing-page">
+                                    <div class="thumb-cover"></div>
+                                </a>
+                            </div>
+                            <div class="card-info">
+                                <div class="moving">
+                                    <a href="#/product/awesome-landing-page">
+                                        <h3><strong>Laptop Dell Vostro 14 3400 YX51W6</strong> </h3>
+                                        <button class="prices" style="color: white;">20.390.000₫</button>
+                                        <p>
+                                            <i class="fa-solid fa-display"> </i> 14.0 inch &ensp;
+                                            <i class="fa-solid fa-microchip"></i> Core i5 &ensp;
+                                            <i class="fa-solid fa-memory"></i> 8 GB &ensp;
+                                            <i class="fa-solid fa-hard-drive"></i> SSD 512 GB <br>
+                                            <i class="fa-solid fa-tachograph-digital"></i> NVIDIA GeForce MX330 <br>
+                                            <i class="fa-solid fa-weight-hanging"></i> 1.6 kg
+                                        </p>
+                                        <button class="btn btn-danger" style="margin-top:2%;">Mua ngay</button>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
+                        <div class="card card-small">
+                            <div class="thumbnail">
+                                <img alt="Opt alp thumbnail" src="/img-folder/laptop-msi.webp">
+                                <a href="#/product/awesome-landing-page">
+                                    <div class="thumb-cover"></div>
+                                </a>
+                            </div>
+                            <div class="card-info">
+                                <div class="moving">
+                                    <a href="#/product/awesome-landing-page">
+                                        <h3><strong>Laptop MSI GF63 Thin 11UD-473VN 473VN</strong> </h3>
+                                        <button class="prices" style="color: white;">22.990.000₫</button>
+                                        <p>
+                                            <i class="fa-solid fa-display"> </i> 15.6 inch &ensp;
+                                            <i class="fa-solid fa-microchip"></i> Core i5 &ensp;
+                                            <i class="fa-solid fa-memory"></i> 8 GB &ensp;
+                                            <i class="fa-solid fa-hard-drive"></i> SSD 512 GB <br>
+                                            <i class="fa-solid fa-tachograph-digital"></i> NVIDIA GeForce RTX 3050Ti <br>
+                                            <i class="fa-solid fa-weight-hanging"></i> 1.9 kg
+                                            
+                                        </p>
+                                        <button class="btn btn-danger" style="margin-top:2%;">Mua ngay</button>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
+                        <div class="card card-small">
+                            <div class="thumbnail">
+                                <img alt="Opt alp thumbnail" src="/img-folder/laptop-asus.webp">
+                                <a href="#/product/awesome-landing-page">
+                                    <div class="thumb-cover"></div>
+                                </a>
+                            </div>
+                            <div class="card-info">
+                                <div class="moving">
+                                    <a href="#/product/awesome-landing-page">
+                                        <h3><strong>Laptop ASUS Gaming ROG Strix G15 G513IH</strong> </h3>
+                                        <button class="prices" style="color: white;">20.690.000₫</button>
+                                        <p>
+                                            <i class="fa-solid fa-display"> </i> 15.6 inch &ensp;
+                                            <i class="fa-solid fa-microchip"></i> Ryzen 7 &ensp;
+                                            <i class="fa-solid fa-memory"></i> 8 GB &ensp;
+                                            <i class="fa-solid fa-hard-drive"></i> SSD 512 GB
+                                            <br>
+                                            <i class="fa-solid fa-tachograph-digital"></i> NVIDIA GeForce GTX 1650
+                                            <br>
+                                            <i class="fa-solid fa-weight-hanging"></i> 2.1 kg
+                                        </p>
+                                        <button class="btn btn-danger" style="margin-top:2%;">Mua ngay</button>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="container py-5">
+            <div class="row text-center pt-3">
+                <div class="col-lg-6 m-auto">
+                    <h1 class="h1">Sản Phẩm Khác</h1>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12 col-md-4 p-5 mt-3">
+                    <a href="#"><img src="/img-folder/chuot.webp" class="rounded-circle img-fluid border"></a>
+                    <h5 class="text-center mt-3 mb-3"></h5>
+                    <p class="text-center"><a class="btn btn-danger">Xem thêm</a></p>
+                </div>
+                <div class="col-12 col-md-4 p-5 mt-3">
+                    <a href="#"><img src="/img-folder/banphim.webp" class="rounded-circle img-fluid border"></a>
+                    <h2 class="h5 text-center mt-3 mb-3"></h2>
+                    <p class="text-center"><a class="btn btn-danger">Xem thêm</a></p>
+                </div>
+                <div class="col-12 col-md-4 p-5 mt-3">
+                    <a href="#"><img src="/img-folder/tainghe.webp" class="rounded-circle img-fluid border"></a>
+                    <h2 class="h5 text-center mt-3 mb-3"></h2>
+                    <p class="text-center"><a class="btn btn-danger">Xem thêm</a></p>
+                </div>
+            </div>
+        </section>
     </main>
-    <footer class="text-center text-lg-start text-dark" style="background-color: #F3F4F6">
-        <div class="container-fluid">
-            <section class="d-flex justify-content-between p-4 text-white ">
-                <div class="me-5">
-                </div>
-            </section>
-            <section>
-                <div class="container text-md-start">
-                    <div class="row mt-1">
-                        <div class="col-md-6 col-lg-3 col-sm-6 col-xl-3 mx-auto mb-md-0 mb-4 text-center">
-                            <h6 class="text-uppercase fw-bold">THÀNH VIÊN NHÓM</h6>
-                            <hr class="mx-auto" style="width: 60px; background-color: #0080ff; height: 2px" style="width: 60px; background-color: #7c4dff; height: 2px">
-                            <p>Trần Trung</p>
-                            <p>Trình Thị Ngọc Diệp</p>
-                            <p>Phạm Nguyễn Gia Bảo</p>
-                            <p>Trần Hữu Thịnh</p>
-                            <p>Nguyễn Khắc Duy</p>
-                        </div>
-                        <div class="col-md-6 col-lg-3 col-sm-6 mx-auto mb-4 text-center">
-                            <h6 class="text-uppercase fw-bold">TÀI KHOẢN</h6>
-                            <hr class="mx-auto" style="width: 60px; background-color: #0080ff; height: 2px" />
-                            <p><a href="#!" class="text-dark text-decoration-none">Đăng nhập</a></p>
-                            <p><a href="#!" class="text-dark text-decoration-none">Đăng kí</a></p>
-                            <p><a href="#!" class="text-dark text-decoration-none">Thông tin tài khoản</a></p>
-                            <p><a href="#!" class="text-dark text-decoration-none">Help</a></p>
-                        </div>
-                        <div class="col-md-6 col-lg-3 col-sm-6 mx-auto mb-4 text-center">
-                            <h6 class="text-uppercase fw-bold">SẢN PHẨM</h6>
-                            <hr class="mx-auto" style="width: 60px; background-color: #0080ff; height: 2px" />
-                            <p><a href="#!" class="text-dark text-decoration-none">Laptop</a></p>
-                            <p><a href="#!" class="text-dark text-decoration-none">Phụ kiện</a></p>
-                        </div>
-                        <div class="col-md-6 col-lg-3 col-sm-6 mx-auto mb-md-0 mb-4 text-center">
-                            <h6 class="text-uppercase fw-bold">LIÊN HỆ</h6>
-                            <hr class="mx-auto" style="width: 60px; background-color: #0080ff; height: 2px" />
-                            <p><i class="fas fa-home mr-3"></i>: Khu II - ĐHCT, Khoa CNTT&TT</p>
-                            <p><i class="fas fa-phone mr-3"></i>: 0778125494</p>
-                            <p><i class="fa-brands fa-github"></i>
-                                <a class="text-dark text-decoration-none" href="https://github.com/orgs/HTeamCTU/dashboard">: H-TECH</a>
-                            </p>
-                        </div>
-                    </div>
-                </div>
-            </section>
-        </div>
-    </footer>
+    <footer-component></footer-component>
 </body>
-
 </html>
