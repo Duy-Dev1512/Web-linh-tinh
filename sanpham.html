@@ -1,0 +1,734 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>H-Tech</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="./assets/css/sanpham.css">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" />
+    <link rel="shortcut icon" href="./assets/img/favi.ico" type="image/x-icon">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="./assets/js/header.js" type="text/javascript" defer></script>
+    <script src="./assets/js/footer.js" type="text/javascript" defer></script>
+    <script src="./assets/js/main.js" type="text/javascript" defer></script>
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script>
+        ScrollReveal({
+            reset: true,
+            distance: '200px',
+            duration: 1500,
+            delay: 400
+        });
+    </script>
+</head>
+
+<body>
+    <header-component></header-component>
+    <main>
+        <div class="container-fluid bcrumb">
+            <nav aria-label="breadcrumb">
+                <ol class="breadcrumb">
+                    <li class="breadcrumb-item"><a href="index.html" class="brc-item">Trang chủ</a></li>
+                    <li class="breadcrumb-item"><a href="sanpham.html" class="brc-item">Sản phẩm</a></li>
+                </ol>
+            </nav>
+        </div>
+        <div class="container">
+            <h1 class="title_list pt-3">CÁC SẢN PHẨM LAPTOP</h1>
+            <div class="row">
+                <div class="col-xs-12 col-sm-6 col-md-6 col-lg-4">
+                    <div class="card-r card card-small">
+                        <div class="thumbnail">
+                            <img alt="Opt alp thumbnail" src="./assets/img/sanpham/acernitro5.png">
+                            <a href="#/product/awesome-landing-page">
+                                <div class="thumb-cover"></div>
+                            </a>
+                        </div>
+                        <div class="card-info">
+                            <div class="moving">
+                                <a href="#/product/awesome-landing-page">
+                                    <h3><strong>Acer Nitro Gaming AN515-45-R6EV R5 5600H</strong> </h3>
+                                    <button class="prices" style="color: white;">21.499.000₫</button>
+                                    <p>
+                                        <i class="fa-solid fa-display"> </i> 15.6 inch &ensp;
+                                        <i class="fa-solid fa-microchip"></i> Ryzen 5&ensp;
+                                        <i class="fa-solid fa-memory"></i> 8 GB&ensp;
+                                        <i class="fa-solid fa-hard-drive"></i> SSD 512 GB <br>
+                                        <i class="fa-solid fa-tachograph-digital"></i> NVIDIA GeForce GTX 1650 4GB <br>
+                                        <i class="fa-solid fa-weight-hanging"></i> 2.2 kg
+                                    </p>
+                                </a>
+                            </div>
+                            <div class="d-flex justify-content-end me-2">
+                                <button class="btn btn-outline-secondary btn-sm btn-block" type="button" onclick="addCart('sp01');" data-bs-toggle="modal" data-bs-target="#modelId">
+                                    <i class="fa-solid fa-cart-shopping"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+                <div class="col-xs-12 col-sm-6 col-md-6 col-lg-4">
+                    <div class="card-r card card-small">
+                        <div class="thumbnail">
+                            <img alt="Opt alp thumbnail" src="./assets/img/sanpham/tufgm.png">
+                            <a href="#/product/awesome-landing-page">
+                                <div class="thumb-cover"></div>
+                            </a>
+                        </div>
+                        <div class="card-info">
+                            <div class="moving">
+                                <a href="#/product/awesome-landing-page">
+                                    <h3><strong>Laptop Asus TUF Gaming FX506LH-HN188W i5 10300H</strong> </h3>
+                                    <button class="prices" style="color: white;">18.999.000₫</button>
+                                    <p>
+                                        <i class="fa-solid fa-display"> </i> 15.6 inch &ensp;
+                                        <i class="fa-solid fa-microchip"></i> Core i5 &ensp;
+                                        <i class="fa-solid fa-memory"></i> 8 GB &ensp;
+                                        <i class="fa-solid fa-hard-drive"></i> SSD 512 GB <br>
+                                        <i class="fa-solid fa-tachograph-digital"></i> NVIDIA GeForce GTX 1650 4GB <br>
+                                        <i class="fa-solid fa-weight-hanging"></i> 2.3 kg
+                                    </p>
+                                </a>
+                            </div>
+                            <div class="d-flex justify-content-end me-2">
+                                <button class="btn btn-outline-secondary btn-sm btn-block" type="button" onclick="addCart('sp02');" data-bs-toggle="modal" data-bs-target="#modelId">
+                                    <i class="fa-solid fa-cart-shopping"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xs-12 col-sm-6 col-md-6 col-lg-4">
+                    <div class="card-r card card-small">
+                        <div class="thumbnail">
+                            <img alt="Opt alp thumbnail" src="./assets/img/sanpham/msi.png">
+                            <a href="#/product/awesome-landing-page">
+                                <div class="thumb-cover"></div>
+                            </a>
+                        </div>
+                        <div class="card-info">
+                            <div class="moving">
+                                <a href="#/product/awesome-landing-page">
+                                    <h3><strong>Laptop MSI Gaming GF63 Thin 10SC-481VN i7</strong> </h3>
+                                    <button class="prices" style="color: white;">20.699.000₫</button>
+                                    <p>
+                                        <i class="fa-solid fa-display"> </i> 15.6 inch &ensp;
+                                        <i class="fa-solid fa-microchip"></i> Core i7 &ensp;
+                                        <i class="fa-solid fa-memory"></i> 8 GB &ensp;
+                                        <i class="fa-solid fa-hard-drive"></i> SSD 512 GB <br>
+                                        <i class="fa-solid fa-tachograph-digital"></i> NVIDIA GeForce GTX 1650<br>
+                                        <i class="fa-solid fa-weight-hanging"></i> 1.86 kg
+                                    </p>
+                                </a>
+                            </div>
+                            <div class="d-flex justify-content-end me-2">
+                                <button class="btn btn-outline-secondary btn-sm btn-block" type="button" onclick="addCart('sp03');" data-bs-toggle="modal" data-bs-target="#modelId">
+                                    <i class="fa-solid fa-cart-shopping"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xs-12 col-sm-6 col-md-6 col-lg-4">
+                    <div class="card-r card card-small">
+                        <div class="thumbnail">
+                            <img alt="Opt alp thumbnail" src="./assets/img/sanpham/dell-vostro.png">
+                            <a href="#/product/awesome-landing-page">
+                                <div class="thumb-cover"></div>
+                            </a>
+                        </div>
+                        <div class="card-info">
+                            <div class="moving">
+                                <a href="#/product/awesome-landing-page">
+                                    <h3><strong>Dell Vostro V3400 i5 1135G7/YX51W3/VO299</strong> </h3>
+                                    <button class="prices" style="color: white;">20.849.000₫</button>
+                                    <p>
+                                        <i class="fa-solid fa-display"> </i> 14.0 inch &ensp;
+                                        <i class="fa-solid fa-microchip"></i> Core i5 &ensp;
+                                        <i class="fa-solid fa-memory"></i> 8 GB &ensp;
+                                        <i class="fa-solid fa-hard-drive"></i> SSD 512 GB <br>
+                                        <i class="fa-solid fa-tachograph-digital"></i> NVIDIA GeForce MX330 2GB <br>
+                                        <i class="fa-solid fa-weight-hanging"></i> 1.55 kg
+                                    </p>
+                                </a>
+                            </div>
+                            <div class="d-flex justify-content-end me-2">
+                                <button class="btn btn-outline-secondary btn-sm btn-block" type="button" onclick="addCart('sp04');" data-bs-toggle="modal" data-bs-target="#modelId">
+                                    <i class="fa-solid fa-cart-shopping"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xs-12 col-sm-6 col-md-6 col-lg-4">
+                    <div class="card-r card card-small">
+                        <div class="thumbnail">
+                            <img alt="Opt alp thumbnail" src="./assets/img/sanpham/lenovo_5pro.png">
+                            <a href="#/product/awesome-landing-page">
+                                <div class="thumb-cover"></div>
+                            </a>
+                        </div>
+                        <div class="card-info">
+                            <div class="moving">
+                                <a href="#/product/awesome-landing-page">
+                                    <h3><strong>Laptop Lenovo Ideapad 5 Pro 14ACN6-82L700L7VN</strong> </h3>
+                                    <button class="prices" style="color: white;">22.490.000₫</button>
+                                    <button class="old-prices">24.490.000₫</button>
+                                    <p>
+                                        <i class="fa-solid fa-display"> </i> 14.0 inch&ensp;
+                                        <i class="fa-solid fa-microchip"></i> Ryzen7&ensp;
+                                        <i class="fa-solid fa-memory"></i> 16 GB&ensp;
+                                        <i class="fa-solid fa-hard-drive"></i> SSD 512GB<br>
+                                        <i class="fa-solid fa-tachograph-digital"></i> AMD Radeon Graphics <br>
+                                        <i class="fa-solid fa-weight-hanging"></i> 1.3 kg
+                                    </p>
+                                </a>
+                            </div>
+                            <div class="d-flex justify-content-end me-2">
+                                <button class="btn btn-outline-secondary btn-sm btn-block" type="button" onclick="addCart('sp05');" data-bs-toggle="modal" data-bs-target="#modelId">
+                                    <i class="fa-solid fa-cart-shopping"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xs-12 col-sm-6 col-md-6 col-lg-4">
+                    <div class="card-r card card-small">
+                        <div class="thumbnail">
+                            <img alt="Opt alp thumbnail" src="./assets/img/sanpham/lenovo_yoga.png">
+                            <a href="#/product/awesome-landing-page">
+                                <div class="thumb-cover"></div>
+                            </a>
+                        </div>
+                        <div class="card-info">
+                            <div class="moving">
+                                <a href="#/product/awesome-landing-page">
+                                    <h3><strong>Laptop Lenovo Yoga Slim 7 Carbon 14ACN6</strong> </h3>
+                                    <button class="prices" style="color: white;">31.990.000₫</button>
+                                    <button class="old-prices">34.490.000₫</button>
+                                    <p>
+                                        <i class="fa-solid fa-display"> </i> 14.0 inch &ensp;
+                                        <i class="fa-solid fa-microchip"></i> Ryzen 7&ensp;
+                                        <i class="fa-solid fa-memory"></i> 16 GB &ensp;
+                                        <i class="fa-solid fa-hard-drive"></i> SSD 1TB <br>
+                                        <i class="fa-solid fa-tachograph-digital"></i> NVIDIA GeForce MX450 2GB<br>
+                                        <i class="fa-solid fa-weight-hanging"></i> 1.1 kg
+                                    </p>
+                                </a>
+                            </div>
+                            <div class="d-flex justify-content-end me-2">
+                                <button class="btn btn-outline-secondary btn-sm btn-block" type="button" onclick="addCart('sp06');" data-bs-toggle="modal" data-bs-target="#modelId">
+                                    <i class="fa-solid fa-cart-shopping"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xs-12 col-sm-6 col-md-6 col-lg-4">
+                    <div class="card-r card card-small">
+                        <div class="thumbnail">
+                            <img alt="Opt alp thumbnail" src="./assets/img/sanpham/lenovo_3.png">
+                            <a href="#/product/awesome-landing-page">
+                                <div class="thumb-cover"></div>
+                            </a>
+                        </div>
+                        <div class="card-info">
+                            <div class="moving">
+                                <a href="#/product/awesome-landing-page">
+                                    <h3><strong>Laptop Lenovo IdeaPad 3 15ITL6 82H800M4VN</strong> </h3>
+                                    <button class="prices" style="color: white;">12.490.000₫</button>
+                                    <button class="old-prices">14.490.000₫</button>
+                                    <p>
+                                        <i class="fa-solid fa-display"> </i>15.6 inch&ensp;
+                                        <i class="fa-solid fa-microchip"></i>Intel Core i3&ensp;
+                                        <i class="fa-solid fa-hard-drive"></i> SSD 256GB<br>
+                                        <i class="fa-solid fa-tachograph-digital"></i> Intel UHD Graphics<br>
+                                        <i class="fa-solid fa-weight-hanging"></i> 1.6 kg
+                                    </p>
+                                </a>
+                            </div>
+                            <div class="d-flex justify-content-end me-2">
+                                <button class="btn btn-outline-secondary btn-sm btn-block" type="button" onclick="addCart('sp07');" data-bs-toggle="modal" data-bs-target="#modelId">
+                                    <i class="fa-solid fa-cart-shopping"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xs-12 col-sm-6 col-md-6 col-lg-4">
+                    <div class="card-r card card-small">
+                        <div class="thumbnail">
+                            <img alt="Opt alp thumbnail" src="./assets/img/sanpham/lenovo_5.png">
+                            <a href="#/product/awesome-landing-page">
+                                <div class="thumb-cover"></div>
+                            </a>
+                        </div>
+                        <div class="card-info">
+                            <div class="moving">
+                                <a href="#/product/awesome-landing-page">
+                                    <h3><strong>Laptop Lenovo IdeaPad 5 15ITL05 82FG01H8VN</strong> </h3>
+                                    <button class="prices" style="color: white;">16.990.000₫</button>
+                                    <button class="old-prices">18.490.000₫</button>
+                                    <p>
+                                        <i class="fa-solid fa-display"> </i> 15.6 inch &ensp;
+                                        <i class="fa-solid fa-microchip"></i> Intel Core i5&ensp;
+                                        <i class="fa-solid fa-hard-drive"></i> SSD 256GB <br>
+                                        <i class="fa-solid fa-tachograph-digital"></i> Intel Iris Xe Graphics <br>
+                                        <i class="fa-solid fa-weight-hanging"></i> 1.7 kg
+                                    </p>
+                                </a>
+                            </div>
+                            <div class="d-flex justify-content-end me-2">
+                                <button class="btn btn-outline-secondary btn-sm btn-block " type="button" onclick="addCart('sp08');" data-bs-toggle="modal" data-bs-target="#modelId">
+                                    <i class="fa-solid fa-cart-shopping"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xs-12 col-sm-6 col-md-6 col-lg-4">
+                    <div class="card-r card card-small">
+                        <div class="thumbnail">
+                            <img alt="Opt alp thumbnail" src="./assets/img/sanpham/lenovo_id3.png">
+                            <a href="#/product/awesome-landing-page">
+                                <div class="thumb-cover"></div>
+                            </a>
+                        </div>
+                        <div class="card-info">
+                            <div class="moving">
+                                <a href="#/product/awesome-landing-page">
+                                    <h3><strong>Laptop Lenovo IdeaPad 3 15ITL6 82H800M3VN</strong> </h3>
+                                    <button class="prices" style="color: white;">15.990.000₫</button>
+                                    <p>
+                                        <i class="fa-solid fa-display"> </i> 15.6 inch &ensp;
+                                        <i class="fa-solid fa-microchip"></i> Intel Core i5&ensp;
+                                        <i class="fa-solid fa-hard-drive"></i> SSD 256 GB <br>
+                                        <i class="fa-solid fa-tachograph-digital"></i> Intel Iris Xe Graphics <br>
+                                        <i class="fa-solid fa-weight-hanging"></i> 1.6 kg
+                                    </p>
+                                </a>
+                            </div>
+                            <div class="d-flex justify-content-end me-2">
+                                <button class="btn btn-outline-secondary btn-sm btn-block" type="button" onclick="addCart('sp09');" data-bs-toggle="modal" data-bs-target="#modelId">
+                                    <i class="fa-solid fa-cart-shopping"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xs-12 col-sm-6 col-md-6 col-lg-4">
+                    <div class="card-r card card-small">
+                        <div class="thumbnail">
+                            <img alt="Opt alp thumbnail" src="./assets/img/sanpham/lenovo_gm.png">
+                            <a href="#/product/awesome-landing-page">
+                                <div class="thumb-cover"></div>
+                            </a>
+                        </div>
+                        <div class="card-info">
+                            <div class="moving">
+                                <a href="#/product/awesome-landing-page">
+                                    <h3><strong>Laptop Lenovo Ideapad Gaming 3 15IMH05</strong> </h3>
+                                    <button class="prices" style="color: white;">17.490.000₫</button>
+                                    <p>
+                                        <i class="fa-solid fa-display"> </i> 15.6 inch &ensp;
+                                        <i class="fa-solid fa-microchip"></i> Core i5 &ensp;
+                                        <i class="fa-solid fa-memory"></i> 8 GB &ensp;
+                                        <i class="fa-solid fa-hard-drive"></i> SSD 512 GB <br>
+                                        <i class="fa-solid fa-tachograph-digital"></i> NVIDIA GeForce GTX 1650<br>
+                                        <i class="fa-solid fa-weight-hanging"></i> 2.2 kg
+                                    </p>
+                                </a>
+                            </div>
+                            <div class="d-flex justify-content-end me-2">
+                                <button class="btn btn-outline-secondary btn-sm btn-block" id="" type="button" onclick="addCart('sp10');" data-bs-toggle="modal" data-bs-target="#modelId">
+                                    <i class="fa-solid fa-cart-shopping"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xs-12 col-sm-6 col-md-6 col-lg-4">
+                    <div class="card-r card card-small">
+                        <div class="thumbnail">
+                            <img alt="Opt alp thumbnail" src="./assets/img/sanpham/acer_predator.png">
+                            <a href="#/product/awesome-landing-page">
+                                <div class="thumb-cover"></div>
+                            </a>
+                        </div>
+                        <div class="card-info">
+                            <div class="moving">
+                                <a href="#/product/awesome-landing-page">
+                                    <h3><strong>Laptop Acer Predator Triton 300 PT315-53-7440</strong> </h3>
+                                    <button class="prices" style="color: white;">33.390.000₫</button>
+                                    <p>
+                                        <i class="fa-solid fa-display"> </i> 15.6 inch &ensp;
+                                        <i class="fa-solid fa-microchip"></i> Core i7 &ensp;
+                                        <i class="fa-solid fa-memory"></i> 8 GB &ensp;
+                                        <i class="fa-solid fa-hard-drive"></i> SSD 512 GB <br>
+                                        <i class="fa-solid fa-tachograph-digital"></i> NVIDIA GeForce RTX 3050Ti 4GB GDDR6<br>
+                                        <i class="fa-solid fa-weight-hanging"></i> 2.0 kg
+                                    </p>
+                                </a>
+                            </div>
+                            <div class="d-flex justify-content-end me-2">
+                                <button class="btn btn-outline-secondary btn-sm btn-block" type="button" onclick="addCart('sp11');" data-bs-toggle="modal" data-bs-target="#modelId">
+                                    <i class="fa-solid fa-cart-shopping"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xs-12 col-sm-6 col-md-6 col-lg-4">
+                    <div class="card-r card card-small">
+                        <div class="thumbnail">
+                            <img alt="Opt alp thumbnail" src="./assets/img/sanpham/acer_travelmate.png">
+                            <a href="#/product/awesome-landing-page">
+                                <div class="thumb-cover"></div>
+                            </a>
+                        </div>
+                        <div class="card-info">
+                            <div class="moving">
+                                <a href="#/product/awesome-landing-page">
+                                    <h3><strong>Laptop ACER TravelMate P2 TMP214-53-5571 NX.VPNSV.01V</strong> </h3>
+                                    <button class="prices" style="color: white;">18.490.000₫</button>
+                                    <p>
+                                        <i class="fa-solid fa-display"> </i> 14.0 inch &ensp;
+                                        <i class="fa-solid fa-microchip"></i> Core i5 &ensp;
+                                        <i class="fa-solid fa-hard-drive"></i> SSD 512 GB <br>
+                                        <i class="fa-solid fa-tachograph-digital"></i> Intel Iris Xe Graphics<br>
+                                        <i class="fa-solid fa-weight-hanging"></i> 1.6 kg
+                                    </p>
+                                </a>
+                            </div>
+                            <div class="d-flex justify-content-end me-2">
+                                <button class="btn btn-outline-secondary btn-sm btn-block" type="button" onclick="addCart('sp12');" data-bs-toggle="modal" data-bs-target="#modelId">
+                                    <i class="fa-solid fa-cart-shopping"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <h1 class="title_list">CÁC PHỤ KIỆN LAPTOP </h1>
+            <h2 class="title_list_h2 h2 d-flex flex-wrap justify-content-center align-items-center px-4 py-3 bg-secondary">Chuột Gaming & Văn phòng</h2>
+            <div class="row">
+                <!-- Item-->
+                <div class="col-xs-12 col-sm-6 col-md-6 col-lg-4">
+                    <div class="card-l card card-small">
+                        <div class="thumbnail">
+                            <img alt="Opt alp thumbnail" src="./assets/img/sanpham/logitech_g102.png">
+                            <a href="#/product/awesome-landing-page">
+                                <div class="thumb-cover"></div>
+                            </a>
+                        </div>
+                        <div class="card-info">
+                            <div class="moving">
+                                <a href="#/product/awesome-landing-page">
+                                    <h3><strong>Chuột gaming Logitech G102 Gen2 Lightsync</strong> </h3>
+                                    <button class="prices" style="color: white;">390.000₫</button>
+                                    <p><span>Loại: </span>Có dây</p>
+                                    <p><span>Màu sắc: </span>Đen</p>
+                                    <p><span>Trọng lượng: </span>85g</p>
+                                </a>
+                            </div>
+                            <div class="d-flex justify-content-end me-2">
+                                <button class="btn btn-outline-secondary btn-sm btn-block" type="button" onclick="addCart('sp13');" data-bs-toggle="modal" data-bs-target="#modelId">
+                                    <i class="fa-solid fa-cart-shopping"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Item-->
+                <div class="col-xs-12 col-sm-6 col-md-6 col-lg-4">
+                    <div class="card-l card card-small">
+                        <div class="thumbnail">
+                            <img alt="Opt alp thumbnail" src="./assets/img/sanpham/logitech_gprohero.png">
+                            <a href="#/product/awesome-landing-page">
+                                <div class="thumb-cover"></div>
+                            </a>
+                        </div>
+                        <div class="card-info">
+                            <div class="moving">
+                                <a href="#/product/awesome-landing-page">
+                                    <h3><strong>Chuột máy tính gaming Logitech G Pro Hero</strong> </h3>
+                                    <button class="prices" style="color: white;">899.000₫</button>
+                                    <p><span>Loại: </span>Có dây</p>
+                                    <p><span>Màu sắc: </span>Đen</p>
+                                    <p><span>Trọng lượng: </span>83g</p>
+                                </a>
+                            </div>
+                            <div class="d-flex justify-content-end me-2">
+                                <button class="btn btn-outline-secondary btn-sm btn-block" type="button" onclick="addCart('sp14');" data-bs-toggle="modal" data-bs-target="#modelId">
+                                    <i class="fa-solid fa-cart-shopping"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Item-->
+                <div class="col-xs-12 col-sm-6 col-md-6 col-lg-4">
+                    <div class="card-l card card-small">
+                        <div class="thumbnail">
+                            <img alt="Opt alp thumbnail" src="./assets/img/sanpham/logitech_g402.png">
+                            <a href="#/product/awesome-landing-page">
+                                <div class="thumb-cover"></div>
+                            </a>
+                        </div>
+                        <div class="card-info">
+                            <div class="moving">
+                                <a href="#/product/awesome-landing-page">
+                                    <h3><strong>Chuột máy tính gaming Logitech G402 Pro (Đen)</strong> </h3>
+                                    <button class="prices" style="color: white;">639.000₫</button>
+                                    <p><span>Loại: </span>Có dây</p>
+                                    <p><span>Màu sắc: </span>Đen</p>
+                                    <p><span>Trọng lượng: </span>87g</p>
+                                </a>
+                            </div>
+                            <div class="d-flex justify-content-end me-2">
+                                <button class="btn btn-outline-secondary btn-sm btn-block" type="button" onclick="addCart('sp15');" data-bs-toggle="modal" data-bs-target="#modelId">
+                                    <i class="fa-solid fa-cart-shopping"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Item-->
+                <div class="col-xs-12 col-sm-6 col-md-6 col-lg-4">
+                    <div class="card-l card card-small">
+                        <div class="thumbnail">
+                            <img alt="Opt alp thumbnail" src="./assets/img/sanpham/logitech_g703.png">
+                            <a href="#/product/awesome-landing-page">
+                                <div class="thumb-cover"></div>
+                            </a>
+                        </div>
+                        <div class="card-info">
+                            <div class="moving">
+                                <a href="#/product/awesome-landing-page">
+                                    <h3><strong>Chuột gaming không dây Logitech G703</strong> </h3>
+                                    <button class="prices" style="color: white;">2.290.000₫</button>
+                                    <p><span>Loại: </span>Không dây</p>
+                                    <p><span>Màu sắc: </span>Đen</p>
+                                    <p><span>Trọng lượng: </span>85g</p>
+                                </a>
+                            </div>
+                            <div class="d-flex justify-content-end me-2">
+                                <button class="btn btn-outline-secondary btn-sm btn-block" type="button" onclick="addCart('sp16');" data-bs-toggle="modal" data-bs-target="#modelId">
+                                    <i class="fa-solid fa-cart-shopping"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Item-->
+                <div class="col-xs-12 col-sm-6 col-md-6 col-lg-4">
+                    <div class="card-l card card-small">
+                        <div class="thumbnail">
+                            <img alt="Opt alp thumbnail" src="./assets/img/sanpham/dell-ms3220.png">
+                            <a href="#/product/awesome-landing-page">
+                                <div class="thumb-cover"></div>
+                            </a>
+                        </div>
+                        <div class="card-info">
+                            <div class="moving">
+                                <a href="#/product/awesome-landing-page">
+                                    <h3><strong>Chuột máy tính Dell MS3220</strong> </h3>
+                                    <button class="prices" style="color: white;">470.000₫</button>
+                                    <p><span>Loại: </span>Có dây</p>
+                                    <p><span>Màu sắc: </span>Đen</p>
+                                    <p><span>Trọng lượng: </span>98g</p>
+                                </a>
+                            </div>
+                            <div class="d-flex justify-content-end me-2">
+                                <button class="btn btn-outline-secondary btn-sm btn-block" type="button" onclick="addCart('sp17');" data-bs-toggle="modal" data-bs-target="#modelId">
+                                    <i class="fa-solid fa-cart-shopping"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Item-->
+                <div class="col-xs-12 col-sm-6 col-md-6 col-lg-4">
+                    <div class="card-l card card-small">
+                        <div class="thumbnail">
+                            <img alt="Opt alp thumbnail" src="./assets/img/sanpham/genius-dx110.png">
+                            <a href="#/product/awesome-landing-page">
+                                <div class="thumb-cover"></div>
+                            </a>
+                        </div>
+                        <div class="card-info">
+                            <div class="moving">
+                                <a href="#/product/awesome-landing-page">
+                                    <h3><strong>Chuột máy tính Genius DX110 USB</strong> </h3>
+                                    <button class="prices" style="color: white;">85.000₫</button>
+                                    <p><span>Loại: </span>Có dây</p>
+                                    <p><span>Màu sắc: </span>Xanh</p>
+                                    <p><span>Trọng lượng: </span>72g</p>
+                                </a>
+                            </div>
+                            <div class="d-flex justify-content-end me-2">
+                                <button class="btn btn-outline-secondary btn-sm btn-block" type="button" onclick="addCart('sp18');" data-bs-toggle="modal" data-bs-target="#modelId">
+                                    <i class="fa-solid fa-cart-shopping"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container pb-5 mt-n2 mt-md-n3">
+            <div class="row"> 
+                <h2 class="title_list_h2 h2 d-flex flex-wrap justify-content-center align-items-center px-4 py-3 bg-secondary">Bàn phím Gamming</h2>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-6 col-lg-4 g-mb-30">
+                            <article class="card-r u-shadow-v18 g-bg-white text-center rounded g-px-20 g-py-40 g-mb-5">
+                                <img class="d-inline-block img-fluid mb-4" width="290" height="260" src="./assets/img/sanpham/corsair-K70.png" alt="Image Description">
+                                <h4 class="h5 g-color-black g-font-weight-600 g-mb-10">Bàn phím cơ Corsair K70 RGB MK2 Red Switch</h4>
+                                <p>Đỉnh cao bàn phím Gamming</p>
+                                <button class="prices" style="color: white;">2.990.000₫</button>&ensp;&ensp;
+                                <button class="btn btn-outline-secondary btn-sm btn-block mb-2" type="button" onclick="addCart('sp19');" data-bs-toggle="modal" data-bs-target="#modelId">
+                                    <i class="fa-solid fa-cart-shopping"></i>
+                                </button>
+                            </article>
+                        </div>
+                        <div class="col-md-6 col-lg-4 g-mb-30">
+                            <article class="card-r u-shadow-v18 g-bg-white text-center rounded g-px-20 g-py-40 g-mb-5">
+                                <img class="d-inline-block img-fluid mb-4" width="290" height="260" src="./assets/img/sanpham/FuhlenD.png" alt="Image Description">
+                                <h4 class="h5 g-color-black g-font-weight-600 g-mb-10">Bàn phím cơ Fuhlen M87s RGB Red switch</h4>
+                                <p>Đỉnh cao bàn phím Gamming</p>
+                                <button class="prices" style="color: white;">890.000₫</button>&ensp;&ensp;
+                                <button class="btn btn-outline-secondary btn-sm btn-block mb-2" type="button" onclick="addCart('sp20');" data-bs-toggle="modal" data-bs-target="#modelId">
+                                    <i class="fa-solid fa-cart-shopping"></i>
+                                </button>
+                            </article>
+                        </div>
+                        <div class="col-md-6 col-lg-4 g-mb-30">
+                            <article class="card-r u-shadow-v18 g-bg-white text-center rounded g-px-20 g-py-40 g-mb-5">
+                                <img class="d-inline-block img-fluid mb-4" width="290" height="260" src="./assets/img/sanpham/FL680SAM.png" alt="Image Description">
+                                <h4 class="h5 g-color-black g-font-weight-600 g-mb-10">Bàn phím cơ FL-Esports FL680SAM Blue Switch</h4>
+                                <p>Đỉnh cao bàn phím Gamming</p>
+                                <button class="prices" style="color: white;">2.290.000₫</button>&ensp;&ensp;
+                                <button class="btn btn-outline-secondary btn-sm btn-block mb-2" type="button" onclick="addCart('sp21');" data-bs-toggle="modal" data-bs-target="#modelId">
+                                    <i class="fa-solid fa-cart-shopping"></i>
+                                </button>
+                            </article>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container pb-5 mt-n2 mt-md-n3">
+            <div class="row"> 
+                <h2 class="title_list_h2 h2 d-flex flex-wrap justify-content-center align-items-center px-4 py-3 bg-secondary">Tai nghe gamming</h2>
+                <div class="container">
+                    <div class="row">
+                        <div class=" col-md-6 col-lg-4 g-mb-30">
+                            <article class="card-l u-shadow-v18 g-bg-white text-center rounded g-px-20 g-py-40 g-mb-5">
+                                <img class="d-inline-block img-fluid mb-4" width="290" height="260" src="./assets/img/sanpham/hp-msi.png" alt="Image Description">
+                                <h4 class="h5 g-color-black g-font-weight-600 g-mb-10">Tai nghe MSI</h4>
+                                <p>Lựa chọn hoàn hảo cho đôi tai của bạn</p>
+                                <button class="prices" style="color: white;">450.000₫</button>&ensp;&ensp;
+                                <button class="btn btn-outline-secondary btn-sm btn-block mb-2" type="button" onclick="addCart('sp22');" data-bs-toggle="modal" data-bs-target="#modelId">
+                                    <i class="fa-solid fa-cart-shopping"></i>
+                                </button>
+                            </article>
+                        </div>
+                        
+                        <div class=" col-md-6 col-lg-4 g-mb-30">
+                            <article class="card-l u-shadow-v18 g-bg-white text-center rounded g-px-20 g-py-40 g-mb-5">
+                                <img class="d-inline-block img-fluid mb-4" width="290" height="260" src="./assets/img/sanpham/hp-over-ear.png" alt="Image Description">
+                                <h4 class="h5 g-color-black g-font-weight-600 g-mb-10">Tai nghe Over-ear Zidli ZH7</h4>
+                                <p>Lựa chọn hoàn hảo cho đôi tai của bạn</p>
+                                <button class="prices" style="color: white;">450.000₫</button>&ensp;&ensp;
+                                <button class="btn btn-outline-secondary btn-sm btn-block mb-2" type="button" onclick="addCart('sp23');" data-bs-toggle="modal" data-bs-target="#modelId">
+                                    <i class="fa-solid fa-cart-shopping"></i>
+                                </button>
+                            </article>
+                        </div>
+
+                        <div class=" col-md-6 col-lg-4 g-mb-30">
+                            <article class="card-l u-shadow-v18 g-bg-white text-center rounded g-px-20 g-py-40 g-mb-5">
+                                <img class="d-inline-block img-fluid mb-4" width="290" height="260" src="./assets/img/sanpham/hp-over-ear-plan.png" alt="Image Description">
+                                <h4 class="h5 g-color-black g-font-weight-600 g-mb-10">Tai nghe Over-ear Rig</h4>
+                                <p>Lựa chọn hoàn hảo cho đôi tai của bạn</p>
+                                <button class="prices" style="color: white;">3.999.000₫</button>&ensp;&ensp;
+                                <button class="btn btn-outline-secondary btn-sm btn-block mb-2" type="button" onclick="addCart('sp24');" data-bs-toggle="modal" data-bs-target="#modelId">
+                                    <i class="fa-solid fa-cart-shopping"></i>
+                                </button>
+                            </article>
+                        </div>
+
+                        <div class=" col-md-6 col-lg-4 g-mb-30">
+                            <article class="card-l u-shadow-v18 g-bg-white text-center rounded g-px-20 g-py-40 g-mb-5">
+                                <img class="d-inline-block img-fluid mb-4" width="290" height="260" src="./assets/img/sanpham/hp-dareu-eh.png" alt="Image Description">
+                                <h4 class="h5 g-color-black g-font-weight-600 g-mb-10">Tai nghe DareU EH722X</h4>
+                                <p>Lựa chọn hoàn hảo cho đôi tai của bạn</p>
+                                <button class="prices" style="color: white;">589.000₫</button>&ensp;&ensp; 
+                                <button class="btn btn-outline-secondary btn-sm btn-block mb-2" type="button" onclick="addCart('sp25');" data-bs-toggle="modal" data-bs-target="#modelId">
+                                    <i class="fa-solid fa-cart-shopping"></i>
+                                </button>
+                            </article>
+                        </div>
+
+                        <div class=" col-md-6 col-lg-4 g-mb-30">
+                            <article class="card-l u-shadow-v18 g-bg-white text-center rounded g-px-20 g-py-40 g-mb-5">
+                                <img class="d-inline-block img-fluid mb-4" width="290" height="260" src="./assets/img/sanpham/hp-e-dra-eh492.png" alt="Image Description">
+                                <h4 class="h5 g-color-black g-font-weight-600 g-mb-10">Tai nghe E-dra EH492</h4>
+                                <p>Lựa chọn hoàn hảo cho đôi tai của bạn</p>
+                                <button class="prices" style="color: white;">979.000₫</button>&ensp;&ensp;
+                                <button class="btn btn-outline-secondary btn-sm btn-block mb-2" type="button" onclick="addCart('sp26');" data-bs-toggle="modal" data-bs-target="#modelId">
+                                    <i class="fa-solid fa-cart-shopping"></i>
+                                </button>
+                            </article>
+                        </div>
+
+                        <div class=" col-md-6 col-lg-4 g-mb-30">
+                            <article class="card-l u-shadow-v18 g-bg-white text-center rounded g-px-20 g-py-40 g-mb-5">
+                                <img class="d-inline-block img-fluid mb-4" width="290" height="260" src="./assets/img/sanpham/hp-soundmax-ah713.png" alt="Image Description">
+                                <h4 class="h5 g-color-black g-font-weight-600 g-mb-10">Tai nghe Soundmax AH713</h4>
+                                <p>Lựa chọn hoàn hảo cho đôi tai của bạn</p>
+                                <button class="prices" style="color: white;">660.000₫</button>&ensp;&ensp;
+                                <button class="btn btn-outline-secondary btn-sm btn-block mb-2" type="button" onclick="addCart('sp27');" data-bs-toggle="modal" data-bs-target="#modelId">
+                                    <i class="fa-solid fa-cart-shopping"></i>
+                                </button>
+                            </article>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Modal -->
+        <div class="modal fade" id="modelId" tabindex="-1" role="dialog" aria-labelledby="modelTitleId" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header bg-df">
+                        <h5 class="modal-title text-white">Thông báo!!</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <i class="fa-solid fa-cart-shopping fs-3"></i>
+                        <span>   Bạn đã thêm sản phảm vào giỏ hàng thành công</span>
+                        
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Đóng</button>
+                        <button type="button" class="btn btn-outline-df" onclick="location.href='giohang.html'">Đi đến giỏ hàng</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer-component></footer-component>
+    <script>
+        ScrollReveal().reveal('.card-l',{origin: 'left'}); 
+        ScrollReveal().reveal('.card-r',{origin: 'right'}); 
+    </script>
+</body>
+
+</html>

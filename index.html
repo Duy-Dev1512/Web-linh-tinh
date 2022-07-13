@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>H-Tech</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"/>
+    <link rel="shortcut icon" href="./assets/img/favi.ico" type="image/x-icon">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="./assets/css/sanpham.css">
+    <script src="./assets/js/header.js" type="text/javascript" defer></script>
+    <script src="./assets/js/footer.js" type="text/javascript" defer></script>
+    <script src="./assets/js/main.js" type="text/javascript" defer></script>
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script>
+        ScrollReveal({
+            reset: true,
+            distance: '150px',
+            duration: 1500,
+            delay: 200
+        });
+    </script>
+</head>
+<body>
+    <header-component></header-component>
+    <main>
+        <div class="container-fluid bcrumb">
+            <nav aria-label="breadcrumb">
+                <ol class="breadcrumb">
+                    <li class="breadcrumb-item"><a href="index.html" class="brc-item">Trang chủ</a></li>
+                </ol>
+            </nav>
+        </div>
+        <div id="template-mo-zay-hero-carousel" class="carousel slide" data-bs-ride="carousel" >
+            <ol class="carousel-indicators">
+                <li data-bs-target="#template-mo-zay-hero-carousel" data-bs-slide-to="0" class="active"></li>
+                <li data-bs-target="#template-mo-zay-hero-carousel" data-bs-slide-to="1"></li>
+                <li data-bs-target="#template-mo-zay-hero-carousel" data-bs-slide-to="2"></li>
+            </ol>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <div class="container-fluid">
+                        <div class="row p-0">
+                            <div class="mx-auto">
+                                <img class="img-fluid" src="./assets/img/trangchu/banner1.webp" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="container-fluid">
+                        <div class="row p-0">
+                            <div class="mx-auto">
+                                <img class="img-fluid" src="./assets/img/trangchu/banner2.webp" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="container-fluid">
+                        <div class="row p-0">
+                            <div class="mx-auto">
+                                <img class="img-fluid" src="./assets/img/trangchu/banner3.webp" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <a href="#template-mo-zay-hero-carousel" class="carousel-control-prev text-decoration-none w-auto ps-3" role="button" data-bs-slide="prev">
+                <span class="sr-only">Previous</span>
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            </a>
+            <a href="#template-mo-zay-hero-carousel" class="carousel-control-next text-decoration-none w-auto ps-3" role="button" data-bs-slide="next">
+                <span class="sr-only">Next</span>
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            </a>
+        </div>
+        <section class="bg-light">
+            <div class="container pt-4">
+                <div class="row text-center py-3">
+                    <div class="col-lg-6 mx-auto">
+                        <span class="h1">Sản Phẩm Nổi Bật</span>
+                        <img src="./assets/img/trangchu/hot.gif" alt="" width="50px">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="card-l col-xs-12 col-sm-6 col-md-6 col-lg-3">
+                        <div class="card card-small">
+                            <div class="thumbnail">
+                                <img alt="Opt alp thumbnail" src="./assets/img/sanpham/dell-vostro.png">
+                                <a href="#/product/awesome-landing-page">
+                                    <div class="thumb-cover"></div>
+                                </a>
+                            </div>
+                            <div class="card-info">
+                                <div class=" moving">
+                                    <a href="#/product/awesome-landing-page">
+                                        <h3><strong>Laptop Dell Vostro 14 3400 YX51W6 VN3011</strong> </h3>
+                                        <button class="prices" style="color: white;">20.390.000₫</button>
+                                        <p>
+                                            <i class="fa-solid fa-display"> </i> 14.0 inch &ensp;
+                                            <i class="fa-solid fa-microchip"></i> Core i5 &ensp;
+                                            <i class="fa-solid fa-memory"></i> 8 GB &ensp;
+                                            <i class="fa-solid fa-hard-drive"></i> SSD 512 GB <br>
+                                            <i class="fa-solid fa-tachograph-digital"></i> NVIDIA GeForce MX330 <br>
+                                            <i class="fa-solid fa-weight-hanging"></i> 1.6 kg
+                                        </p>
+                                        <button class="btn btn-danger" style="margin-top:2%;" onclick="addCart('sp04');" data-bs-toggle="modal" data-bs-target="#modelId">Thêm vào giỏ hàng</button>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-l col-xs-12 col-sm-6 col-md-6 col-lg-3">
+                        <div class="card card-small">
+                            <div class="thumbnail">
+                                <img alt="Opt alp thumbnail" src="./assets/img/sanpham/msi.png">
+                                <a href="#/product/awesome-landing-page">
+                                    <div class="thumb-cover"></div>
+                                </a>
+                            </div>
+                            <div class="card-info">
+                                <div class="moving">
+                                    <a href="#/product/awesome-landing-page">
+                                        <h3><strong>Laptop MSI GF63 Thin 11UD-473VN 473VN</strong> </h3>
+                                        <button class="prices" style="color: white;">22.990.000₫</button>
+                                        <p>
+                                            <i class="fa-solid fa-display"> </i> 15.6 inch &ensp;
+                                            <i class="fa-solid fa-microchip"></i> Core i5 &ensp;
+                                            <i class="fa-solid fa-memory"></i> 8 GB &ensp;
+                                            <i class="fa-solid fa-hard-drive"></i> SSD 512 GB <br>
+                                            <i class="fa-solid fa-tachograph-digital"></i> NVIDIA GeForce RTX 3050Ti <br>
+                                            <i class="fa-solid fa-weight-hanging"></i> 1.9 kg
+                                            
+                                        </p>
+                                        <button class="btn btn-danger" style="margin-top:2%;" onclick="addCart('sp02');" data-bs-toggle="modal" data-bs-target="#modelId">Thêm vào giỏ hàng</button>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-l col-xs-12 col-sm-6 col-md-6 col-lg-3">
+                        <div class="card card-small">
+                            <div class="thumbnail">
+                                <img alt="Opt alp thumbnail" src="./assets/img/trangchu/laptop-asus.webp">
+                                <a href="#/product/awesome-landing-page">
+                                    <div class="thumb-cover"></div>
+                                </a>
+                            </div>
+                            <div class="card-info">
+                                <div class="moving">
+                                    <a href="#/product/awesome-landing-page">
+                                        <h3><strong>Laptop ASUS Gaming ROG Strix G15 G513IH</strong> </h3>
+                                        <button class="prices" style="color: white;">20.690.000₫</button>
+                                        <p>
+                                            <i class="fa-solid fa-display"> </i> 15.6 inch&ensp;
+                                            <i class="fa-solid fa-microchip"></i> Ryzen 7&ensp;
+                                            <i class="fa-solid fa-memory"></i> 8GB&ensp;
+                                            <i class="fa-solid fa-hard-drive"></i> SSD 512GB
+                                            <br>
+                                            <i class="fa-solid fa-tachograph-digital"></i> NVIDIA GeForce GTX 1650
+                                            <br>
+                                            <i class="fa-solid fa-weight-hanging"></i> 2.1 kg
+                                        </p>
+                                        <button class="btn btn-danger" style="margin-top:2%;" onclick="addCart('sp28');" data-bs-toggle="modal" data-bs-target="#modelId">Thêm vào giỏ hàng</button>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-l col-xs-12 col-sm-6 col-md-6 col-lg-3">
+                        <div class="card card-small">
+                            <div class="thumbnail">
+                                <img alt="Opt alp thumbnail" src="./assets/img/sanpham/acernitro5.png">
+                                <a href="#/product/awesome-landing-page">
+                                    <div class="thumb-cover"></div>
+                                </a>
+                            </div>
+                            <div class="card-info">
+                                <div class="moving">
+                                    <a href="#/product/awesome-landing-page">
+                                        <h3><strong>Acer Nitro Gaming AN515-45-R6EV R5 5600H</strong> </h3>
+                                        <button class="prices" style="color: white;">21.490.000₫</button>
+                                        <p>
+                                            <i class="fa-solid fa-display"> </i> 15.6 inch&ensp;
+                                            <i class="fa-solid fa-microchip"></i> Ryzen 5&ensp;
+                                            <i class="fa-solid fa-memory"></i> 8GB&ensp;
+                                            <i class="fa-solid fa-hard-drive"></i> SSD 512GB
+                                            <br>
+                                            <i class="fa-solid fa-tachograph-digital"></i> NVIDIA GeForce GTX 1650
+                                            <br>
+                                            <i class="fa-solid fa-weight-hanging"></i> 2.2 kg
+                                        </p>
+                                        <button class="btn btn-danger" style="margin-top:2%;" onclick="addCart('sp01');" data-bs-toggle="modal" data-bs-target="#modelId">Thêm vào giỏ hàng</button>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row text-center">
+                    <div class="col-lg-6 m-auto">
+                        <a href="sanpham.html"><button type="button" class="btn btn-outline-df btn-all">Xem tất cả &rarr;</button></a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="bg-gradient rounded">
+            <div class="container pt-4">
+                <div class="row text-center py-3">
+                    <div class="col-lg-6 m-auto">
+                        <span class="h1">Sản Phẩm Giảm giá</span>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="card-r col-xs-12 col-sm-6 col-md-6 col-lg-3">
+                        <div class="card card-small">
+                            <div class="thumbnail">
+                                <img alt="Opt alp thumbnail" src="./assets/img/sanpham/lenovo_5pro.png">
+                                <a href="#/product/awesome-landing-page">
+                                    <div class="thumb-cover"></div>
+                                </a>
+                            </div>
+                            <div class="card-info">
+                                <div class="moving">
+                                    <a href="#/product/awesome-landing-page">
+                                        <h3><strong>Laptop Lenovo Ideapad 5 Pro 14ACN6-82L700L7VN</strong> </h3>
+                                        <button class="prices" style="color: white;">22.490.000₫</button>
+                                        <button class="old-prices">24.490.000₫</button>
+                                        <p>
+                                            <i class="fa-solid fa-display"> </i> 14.0 inch&ensp;
+                                            <i class="fa-solid fa-microchip"></i> Ryzen7&ensp;
+                                            <i class="fa-solid fa-memory"></i> 16GB&ensp;
+                                            <i class="fa-solid fa-hard-drive"></i> SSD 512GB<br>
+                                            <i class="fa-solid fa-tachograph-digital"></i> AMD Radeon Graphics<br>
+                                            <i class="fa-solid fa-weight-hanging"></i> 1.3kg
+                                        </p>
+                                        <button class="btn btn-danger" style="margin-top:2%;" onclick="addCart('sp05');" data-bs-toggle="modal" data-bs-target="#modelId">Thêm vào giỏ hàng</button>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-r col-xs-12 col-sm-6 col-md-6 col-lg-3">
+                        <div class="card card-small">
+                            <div class="thumbnail">
+                                <img alt="Opt alp thumbnail" src="./assets/img/sanpham/lenovo_yoga.png">
+                                <a href="#/product/awesome-landing-page">
+                                    <div class="thumb-cover"></div>
+                                </a>
+                            </div>
+                            <div class="card-info">
+                                <div class="moving">
+                                    <a href="#/product/awesome-landing-page">
+                                        <h3><strong>Laptop Lenovo Yoga Slim 7 Carbon 14ACN6</strong> </h3>
+                                        <button class="prices" style="color: white;">31.990.000₫</button>
+                                        <button class="old-prices">34.990.000₫</button>
+                                        <p>
+                                            <i class="fa-solid fa-display"> </i> 15.6 inch&ensp;
+                                            <i class="fa-solid fa-microchip"></i> Ryzen7&ensp;
+                                            <i class="fa-solid fa-memory"></i> 16GB&ensp;
+                                            <i class="fa-solid fa-hard-drive"></i> SSD 1TB<br>
+                                            <i class="fa-solid fa-tachograph-digital"></i> NVIDIA GeForce MX450 2GB<br>
+                                            <i class="fa-solid fa-weight-hanging"></i> 1.1kg
+                                            
+                                        </p>
+                                        <button class="btn btn-danger" style="margin-top:2%;" onclick="addCart('sp06');" data-bs-toggle="modal" data-bs-target="#modelId">Thêm vào giỏ hàng</button>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-r col-xs-12 col-sm-6 col-md-6 col-lg-3">
+                        <div class="card card-small">
+                            <div class="thumbnail">
+                                <img alt="Opt alp thumbnail" src="./assets/img/sanpham/lenovo_3.png">
+                                <a href="#/product/awesome-landing-page">
+                                    <div class="thumb-cover"></div>
+                                </a>
+                            </div>
+                            <div class="card-info">
+                                <div class="moving">
+                                    <a href="#/product/awesome-landing-page">
+                                        <h3><strong>Laptop Lenovo IdeaPad 3 15ITL6 82H800M4VN</strong> </h3>
+                                        <button class="prices" style="color: white;">12.490.000₫</button>
+                                        <button class="old-prices">14.490.000₫</button>
+                                        <p>
+                                            <i class="fa-solid fa-display"> </i>15.6 inch&ensp;
+                                            <i class="fa-solid fa-microchip"></i>Intel Core i3&ensp;
+                                            <i class="fa-solid fa-hard-drive"></i> SSD 256GB<br>
+                                            <i class="fa-solid fa-tachograph-digital"></i> Intel UHD Graphics<br>
+                                            <i class="fa-solid fa-weight-hanging"></i> 1.6 kg
+                                        </p>
+                                        <button class="btn btn-danger" style="margin-top:2%;" onclick="addCart('sp07');" data-bs-toggle="modal" data-bs-target="#modelId">Thêm vào giỏ hàng</button>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-r col-xs-12 col-sm-6 col-md-6 col-lg-3">
+                        <div class="card card-small">
+                            <div class="thumbnail">
+                                <img alt="Opt alp thumbnail" src="./assets/img/sanpham/lenovo_5.png">
+                                <a href="#/product/awesome-landing-page">
+                                    <div class="thumb-cover"></div>
+                                </a>
+                            </div>
+                            <div class="card-info">
+                                <div class="moving">
+                                    <a href="#/product/awesome-landing-page">
+                                        <h3><strong>Laptop Lenovo IdeaPad 5 15ITL05 82FG01H8VN</strong> </h3>
+                                        <button class="prices" style="color: white;">16.990.000₫</button>
+                                        <button class="old-prices">18.490.000₫</button>
+                                        <p>
+                                            <i class="fa-solid fa-display"> </i> 15.6 inch &ensp;
+                                            <i class="fa-solid fa-microchip"></i> Intel Core i5&ensp;
+                                            <i class="fa-solid fa-hard-drive"></i> SSD 256GB <br>
+                                            <i class="fa-solid fa-tachograph-digital"></i> Intel Iris Xe Graphics <br>
+                                            <i class="fa-solid fa-weight-hanging"></i> 1.7 kg
+                                        </p>
+                                        <button class="btn btn-danger" style="margin-top:2%;" onclick="addCart('sp08');" data-bs-toggle="modal" data-bs-target="#modelId">Thêm vào giỏ hàng</button>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row text-center">
+                    <div class="col-lg-6 m-auto">
+                        <a href="sanpham.html">
+                            <button type="button" class="btn btn-outline-light btn-all" >Xem tất cả &rarr;
+                            </button></a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="container pt-4">
+            <div class="row text-center pt-3">
+                <div class="col-lg-6 m-auto">
+                    <h1 class="h1">Sản Phẩm Khác</h1>
+                </div>
+            </div>
+            <div class="row">
+                <div class="rv-card col-12 col-md-4 p-5 mt-3">
+                    <a href="#"><img src="./assets/img/trangchu/chuot.webp" class="rounded-circle img-fluid border"></a>
+                    <h5 class="text-center mt-3 mb-3"></h5>
+                    <p class="text-center"><a href="sanpham.html" class="btn btn-danger">Xem thêm</a></p>
+                </div>
+                <div class="rv-card col-12 col-md-4 p-5 mt-3">
+                    <a href="#"><img src="./assets/img/trangchu/banphim.webp" class="rounded-circle img-fluid border"></a>
+                    <h2 class="h5 text-center mt-3 mb-3"></h2>
+                    <p class="text-center"><a href="sanpham.html" class="btn btn-danger">Xem thêm</a></p>
+                </div>
+                <div class="rv-card col-12 col-md-4 p-5 mt-3">
+                    <a href="#"><img src="./assets/img/trangchu/tainghe.webp" class="rounded-circle img-fluid border"></a>
+                    <h2 class="h5 text-center mt-3 mb-3"></h2>
+                    <p class="text-center"><a href="sanpham.html" class="btn btn-danger">Xem thêm</a></p>
+                </div>
+            </div>
+        </section>
+        <!-- Modal -->
+        <div class="modal fade" id="modelId" tabindex="-1" role="dialog" aria-labelledby="modelTitleId" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header bg-df">
+                        <h5 class="modal-title text-white">Thông báo!!</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <i class="fa-solid fa-cart-shopping fs-3"></i>
+                        <span>   Bạn đã thêm sản phảm vào giỏ hàng thành công</span>
+                        
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Đóng</button>
+                        <button type="button" class="btn btn-outline-df" onclick="location.href='giohang.html'">Đi đến giỏ hàng</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer-component></footer-component>
+    <script>
+        ScrollReveal().reveal('.rv-card',{origin: 'top'}); 
+        ScrollReveal().reveal('.card-l',{origin: 'left'}); 
+        ScrollReveal().reveal('.card-r',{origin: 'right'}); 
+    </script>
+</body>
+</html>

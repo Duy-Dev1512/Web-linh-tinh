@@ -1,0 +1,8 @@
+@import url('https://fonts.googleapis.com/css2?family=Alfa+Slab+One&display=swap');
+#sign-up, #sign-in{
+    font-family: 'Alfa Slab One', cursive;
+}
+.bg-gradient{
+    background: linear-gradient(135deg, rgb(15, 215, 191) 0%, rgb(22, 161, 176) 50%, rgb(0, 166, 255) 100%) !important;
+    opacity: 1 !important;
+}

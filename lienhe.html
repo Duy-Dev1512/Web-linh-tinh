@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Liên Hệ</title>
+    <link rel="stylesheet" href="./assets/css/lienhe.css">
+    <link rel="stylesheet" href="./styles.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"/>
+    <link rel="shortcut icon" href="./assets/img/favi.ico" type="image/x-icon">
+    <script src="./assets/js/header.js"></script>
+    <script src="./assets/js/footer.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="./assets/js/main.js" type="text/javascript" defer></script>
+</head>
+<body>
+    <!-- header -->
+    <header-component></header-component>
+    <!-- main -->
+    <main id="body">
+        <div class="container-fluid bcrumb">
+            <nav aria-label="breadcrumb">
+                <ol class="breadcrumb">
+                    <li class="breadcrumb-item"><a href="index.html" class="brc-item">Trang chủ</a></li>
+                    <li class="breadcrumb-item"><a href="lienhe.html" class="brc-item">Liên hệ</a></li>
+                </ol>
+            </nav>
+        </div>
+        <div class="contactUs">
+            <div class="title">
+                <h2>LIÊN HỆ</h2>
+            </div>
+            <div class="box">
+                <!-- fomr -->
+                <div class="contact form" style="border-radius: 25px;">
+                    <h3>Gửi phản hồi</h3>
+                    <form action="">
+                        <div class="formBox">
+                            <div class="row50">
+                                <div class="inputBox">
+                                    <span>Họ và tên đệm *</span>
+                                    <input type="text" placeholder="Nguyễn Văn" required>
+                                </div>
+                                <div class="inputBox">
+                                    <span>Tên *</span>
+                                    <input type="text" placeholder="Nam" required>
+                                </div>
+                            </div>
+                            <div class="row50">
+                                <div class="inputBox">
+                                    <span>Email *</span>
+                                    <input type="email" placeholder="Htech@gmail.com" required>
+                                </div>
+                                <div class="inputBox">
+                                    <span>Số điện thoại</span>
+                                    <input type="number" placeholder="+84 778 125 494">
+                                </div>
+                            </div>
+                            <div class="row100">
+                                <div class="inputBox">
+                                    <textarea placeholder="Viết phản hồi của bạn tại đây..." required></textarea>
+                                </div>                       
+                            </div>
+                            <div class="row100">
+                                <div class="inputBox">
+                                    <input type="submit" value="Gửi">
+                                </div>                       
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <!-- info box -->
+                <div class="contact info" style="border-radius: 25px;">
+                    <h3>Thông tin liên hệ</h3>
+                    <div class="infoBox">
+                        <div>
+                            <span><ion-icon name="location-outline"></ion-icon></span>
+                            <p>Khu II - ĐHCT, <br>Khoa CNTT&TT</p>
+                        </div>
+                        <div>
+                            <span><ion-icon name="mail-outline"></ion-icon></span>
+                            <a href="mailto:Htech@gmail.com">Htech@gmail.com</a>
+                        </div>
+                        <div>
+                            <span><ion-icon name="call-outline"></ion-icon></span>
+                            <a href="tel:+84778125494">+84 778 125 494</a>
+                        </div>
+                        <div>
+                            <span><ion-icon name="logo-github"></ion-icon></span>
+                            <a href="https://github.com/orgs/HTeamCTU/dashboard">H-TECH</a>
+                        </div>
+                    </div>
+                </div>
+    
+                <!-- map -->
+                <div class="contact map" style="border-radius: 25px;">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3911.8578521783857!2d105.76843557381221!3d10.029934286575374!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31a0895a51d60719%3A0x9d76b0035f6d53d0!2zxJDhuqFpIGjhu41jIEPhuqduIFRoxqE!5e0!3m2!1svi!2s!4v1651331237127!5m2!1svi!2s" style="border-radius:35px;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </div>
+        </div>
+        <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+        <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    </main>
+    <!-- Footer -->
+    <footer-component></footer-component>
+
+</body>
+</html>

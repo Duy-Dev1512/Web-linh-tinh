@@ -1,0 +1,65 @@
+@import url('https://fonts.googleapis.com/css2?family=Alfa+Slab+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+body{
+    font-family: 'Roboto', sans-serif;
+}
+.nav-item{
+    font-weight: bold;
+}
+.nav-link:hover{
+    color: #fbff00 !important;
+}
+.img-fluid{
+    background-position: center;
+    background-size: cover;
+}
+.img-fluid{
+    width: 100%;
+}
+.bg-df{
+    background-color: #019ABD !important;
+}
+.btn-outline-df{
+    color: #019ABD !important;
+    border-color: #019ABD !important;
+}
+.btn-all{
+    width: 250px;
+    border-radius: 20px;
+    margin-bottom: 20px;
+}
+.btn-outline-df:hover{
+    background-color: #019ABD !important;
+    border-color: #019ABD !important;
+    color: white !important;
+}
+.brand:hover{
+    cursor: pointer;
+}
+#btn-back-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+}
+.container-fluid{
+    padding: 0 !important;
+}
+.h1{
+    font-family: 'Alfa Slab One', cursive;
+}
+.bcrumb{
+    background-color: rgb(238, 238, 238);
+    margin: 0 !important;
+}
+.breadcrumb{
+    padding: 10px 100px !important;
+    margin: 0 !important;
+}
+.brc-item{
+    color: black;
+    text-decoration: none;
+}
+.bg-gradient{
+    background: linear-gradient(135deg, rgb(15, 215, 191) 0%, rgb(22, 161, 176) 50%, rgb(0, 166, 255) 100%) !important;
+    opacity: 1 !important;
+}
